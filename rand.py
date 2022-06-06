@@ -1,6 +1,6 @@
 
 from random import randint
 
-def rollinNum():
-	n = randint(0,99)
+def rollinNum(n):
+	n = randint(0,n)
 	return n
