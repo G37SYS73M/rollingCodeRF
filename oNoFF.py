@@ -1,4 +1,4 @@
-import fibbo,rand,bi
+import fibbo,rand,crypt,bi
 
 
 def signalOn(n):
@@ -7,8 +7,9 @@ def signalOn(n):
 	while True:
 		rollin_num = rand.rollinNum(l_fibbo-1)
 		if(fibbo_list[rollin_num]%2==0 and fibbo_list[rollin_num]!=0 ):
-			x,y = bi.toBi(fibbo_list[rollin_num],rollin_num)
-			return x,y
+			x = crypt.encrypt(fibbo_list[rollin_num])
+			y = bi.toBi(x)
+			return y
 			break
 
 def signalOff(n):
@@ -17,6 +18,6 @@ def signalOff(n):
 	while True:
 		rollin_num = rand.rollinNum(l_fibbo-1)
 		if(fibbo_list[rollin_num]%2!=0 and fibbo_list[rollin_num]!=0):
-			x,y = bi.toBi(fibbo_list[rollin_num],rollin_num)
-			return x,y
-			break
+			x= crypt.encrypt(fibbo_list[rollin_num])
+			y = bi.toBi(x)
+			return y

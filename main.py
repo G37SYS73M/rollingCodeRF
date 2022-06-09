@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-import oNoFF,random
+import oNoFF,random,crypt
 
 n = random.randint(0,99)
 
-print("Fibbo Based Rolling Code Algo: \n By G37SYS73M\n")
+print("Fibbo Based Rolling Code Algo to Encode Data: \n By G37SYS73M\n")
 
 while True:
 	
@@ -20,7 +20,7 @@ while True:
 		exit()
 	else:
 		print("Invalid Input :(")
-		print("Options:\nPress 1 for Start\nPress 2 for Stop\nPress 3 to Exit\n")
+		print("Options:\nPress 1 for Star1t\nPress 2 for Stop\nPress 3 to Exit\n")
 		
 
 

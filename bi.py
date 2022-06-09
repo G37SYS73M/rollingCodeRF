@@ -1,4 +1,4 @@
-def toBi(x,y):
+def toBi(x):
     s = bin(x).replace("0b", "")
-    r = bin(y).replace("0b", "")
-    return s,r
+    
+    return s
